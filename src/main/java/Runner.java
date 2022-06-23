@@ -31,11 +31,11 @@ public class Runner {
         System.out.format("Created students = %d\n", rs1);
 
         System.out.print("\nfindStudentById() function: \n");
-        Student student = daoStudent.findStudentById(9L);
+        Student student = daoStudent.findStudentById(11L);
         System.out.format("%s\t%s\n", student.getFirstName(), student.getLastName());
 
         System.out.print("\ndeleteStudentById() function: \n");
-        int rs3 = daoStudent.deleteStudentById(9L);
+        int rs3 = daoStudent.deleteStudentById(11L);
         System.out.format("Deleted students = %d\n", rs3);
 
         System.out.print(" \n");
@@ -75,6 +75,7 @@ public class Runner {
         catch (SQLException e){
             System.err.print(e.getMessage());
         }
+
 
 
     }
